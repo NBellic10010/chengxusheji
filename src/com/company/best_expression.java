@@ -15,7 +15,7 @@ public class best_expression {
         for(int i: A) {
             List<Integer> l = new ArrayList<>();
             l.add(i);
-            if(i < 40) result.put(i, l);
+
         }
 
         for(int i = 1; i <= 40; i++) {
