@@ -21,16 +21,6 @@ public class permutation_recursive {
     }
 
     public void f(int m) {
-        if(m == this.a.length - 1) {
-            int sum1 = this.a[0] + this.a[1] + this.a[3];
-            int sum2 = this.a[0] + this.a[2] + this.a[5];
-            int sum3 = this.a[3] + this.a[4] + this.a[5];
-            if(sum1 == sum2) {
-                if(sum2 == sum3) print();
-            }
-            //print();
-            return;
-        }
         for(int i = m; i < this.a.length; i++) {
             swap(i, m);
             f(m+1);
